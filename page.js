@@ -1,11 +1,13 @@
-let logo;
+let logo,bg;
 
 function setup() {
 createCanvas(windowWidth,windowHeight);
-logo=loadImage("MetypeBot-Logo.png");
+logo=loadImage("https://raw.githubusercontent.com/metype/MetypeBot-Dashboard/master/MetypeBot-Logo.png");
+bg = loadImage();
 }
 
 function draw() {
+    imageMode(CENTER);
 image(logo,width/2,logo.height);
 }
 
