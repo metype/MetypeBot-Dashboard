@@ -1,9 +1,12 @@
+let logo;
+
 function setup() {
 createCanvas(windowWidth,windowHeight);
+logo=loadImage("MetypeBot-Logo.png");
 }
 
 function draw() {
-ellipse(10,10,mouseX,mouseY);
+image(logo,width/2,logo.height);
 }
 
 function windowResized(){
