@@ -1,13 +1,15 @@
-let logo,bg,hight,scroll=0;
+let logo,bg,hight,scroll=0,discordlogo;
 
 function setup() {
     var cnv = createCanvas(windowWidth, windowHeight);
     cnv.style('display', 'block');
 logo=loadImage("https://raw.githubusercontent.com/metype/MetypeBot-Dashboard/master/MetypeBot-Logo.png");
 bg = loadImage("https://raw.githubusercontent.com/metype/MetypeBot-Dashboard/master/bgcolor.png");
+discordlogo=loadImage("https://discordapp.com/assets/fc0b01fe10a0b8c602fb0106d8189d9b.png");
 }
 
 function draw() {
+    discordlogo.resize(160,54.4);
     scroll = (scroll>0) ? 0:scroll;
     scroll = (scroll<-200) ? -200:scroll;
     translate(0,scroll);
@@ -15,6 +17,7 @@ function draw() {
     imageMode(CORNER);
     bg.resize(width,logo.height*2);
     image(bg,0,0);
+    image(discordlogo,width-discordlogo.width,0);
     imageMode(CENTER);
 image(logo,width/2,logo.height);
 rectMode(CENTER);
@@ -64,6 +67,9 @@ function mousePressed() {
                                 }
                                 if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 800 && mouseY-scroll<850) {
                                     link("mathematics.html");
+                                    }
+                                    if(mouseX>width-discordlogo.width&&mouseY+scroll>0&&mouseY+scroll<discordlogo.height) {
+                                        link("https://discordapp.com/api/oauth2/authorize?client_id=363489065590325261&permissions=418768903&scope=bot")
                                     }
 }
 
