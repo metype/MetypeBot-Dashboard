@@ -21,10 +21,10 @@ textAlign(CENTER,CENTER);
 textSize(40);
 text("Moderation",width/2,225)
 textSize(25);
-rect(width/2,300,800,50);
-rect(width/2,375,800,50);
-rect(width/2,450,800,50);
-rect(width/2,525,800,50);
+rect(width/2,300,800,50,20);
+rect(width/2,375,800,50,20);
+rect(width/2,450,800,50,20);
+rect(width/2,525,800,50,20);
 text("ban: Bans a member.",width/2,300)
 text("kick: Kicks a member.",width/2,375)
 text("purge: Deletes a specified number of messages.",width/2,450)

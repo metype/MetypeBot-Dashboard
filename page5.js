@@ -21,11 +21,11 @@ textAlign(CENTER,CENTER);
 textSize(40);
 text("General",width/2,225)
 textSize(25);
-rect(width/2,300,800,50);
-rect(width/2,375,800,50);
-rect(width/2,450,800,50);
-rect(width/2,525,800,50);
-rect(width/2,600,800,50);
+rect(width/2,300,800,50,20);
+rect(width/2,375,800,50,20);
+rect(width/2,450,800,50,20);
+rect(width/2,525,800,50,20);
+rect(width/2,600,800,50,20);
 text("role: Returns all of the users who have a role.",width/2,300)
 text("roleid: Returns roleID of a specified role.",width/2,375)
 text("say: Says something.",width/2,450)

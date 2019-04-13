@@ -24,19 +24,19 @@ textAlign(CENTER,CENTER);
 textSize(40);
 text("Music",width/2,225)
 textSize(25);
-rect(width/2,300,800,50);
-rect(width/2,375,800,50);
-rect(width/2,450,800,50);
-rect(width/2,525,800,50);
-rect(width/2,600,800,50);
-rect(width/2,675,800,50);
-rect(width/2,750,800,50);
-rect(width/2,825,800,50);
-rect(width/2,900,800,50);
-rect(width/2,975,800,50);
-rect(width/2,1050,800,50);
-rect(width/2,1125,800,50);
-rect(width/2,1200,800,50);
+rect(width/2,300,800,50,20);
+rect(width/2,375,800,50,20);
+rect(width/2,450,800,50,20);
+rect(width/2,525,800,50,20);
+rect(width/2,600,800,50,20);
+rect(width/2,675,800,50,20);
+rect(width/2,750,800,50,20);
+rect(width/2,825,800,50,20);
+rect(width/2,900,800,50,20);
+rect(width/2,975,800,50,20);
+rect(width/2,1050,800,50,20);
+rect(width/2,1125,800,50,20);
+rect(width/2,1200,800,50,20);
 text("Play: Queue a song/playlist by URL or name.",width/2,300)
 text("remove: Remove a song from the queue by position in the queue.",width/2,375)
 text("help: Help for commands.",width/2,450)

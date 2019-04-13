@@ -24,12 +24,12 @@ textAlign(CENTER,CENTER);
 textSize(40);
 text("Commands",width/2,225)
 textSize(25);
-rect(width/2,300,800,50);
-rect(width/2,375,800,50);
-rect(width/2,450,800,50);
-rect(width/2,525,800,50);
-rect(width/2,600,800,50);
-rect(width/2,675,800,50);
+rect(width/2,300,800,50,20);
+rect(width/2,375,800,50,20);
+rect(width/2,450,800,50,20);
+rect(width/2,525,800,50,20);
+rect(width/2,600,800,50,20);
+rect(width/2,675,800,50,20);
 text("groups: Lists all command groups.",width/2,300)
 text("enable: Enables a command or command group.",width/2,375)
 text("disable: Disables a command or command group.",width/2,450)

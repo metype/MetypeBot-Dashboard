@@ -21,10 +21,10 @@ textAlign(CENTER,CENTER);
 textSize(40);
 text("Random",width/2,225)
 textSize(25);
-rect(width/2,300,800,50);
-rect(width/2,375,800,50);
-rect(width/2,450,800,50);
-rect(width/2,525,800,50);
+rect(width/2,300,800,50,20);
+rect(width/2,375,800,50,20);
+rect(width/2,450,800,50,20);
+rect(width/2,525,800,50,20);
 text("coinflip: Flips a coin.",width/2,300)
 text("roll: Rolls a die.",width/2,375)
 text("genmaze: Generates a maze.",width/2,450)

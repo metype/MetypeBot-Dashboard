@@ -21,10 +21,10 @@ textAlign(CENTER,CENTER);
 textSize(40);
 text("Fun",width/2,225)
 textSize(25);
-rect(width/2,300,800,50);
-rect(width/2,375,800,50);
-rect(width/2,450,800,50);
-rect(width/2,525,800,50);
+rect(width/2,300,800,50,20);
+rect(width/2,375,800,50,20);
+rect(width/2,450,800,50,20);
+rect(width/2,525,800,50,20);
 text("capsspam: Takes arguments and returns them randomly cappsed.",width/2,300)
 text("clap: Adds :clap: in between all words typed in this command",width/2,375)
 text("spacedout: Adds a space between each letter typed after this",width/2,450)

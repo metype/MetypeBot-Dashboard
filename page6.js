@@ -21,10 +21,10 @@ textAlign(CENTER,CENTER);
 textSize(40);
 text("Roleplay",width/2,225)
 textSize(25);
-rect(width/2,300,800,50);
-rect(width/2,375,800,50);
-rect(width/2,450,800,50);
-rect(width/2,525,800,50);
+rect(width/2,300,800,50,20);
+rect(width/2,375,800,50,20);
+rect(width/2,450,800,50,20);
+rect(width/2,525,800,50,20);
 text("kiss: Kisses a user.",width/2,300)
 text("poke: Pokes a user.",width/2,375)
 text("punch: Punches a user.",width/2,450)
