@@ -23,10 +23,10 @@ rect(width/2,300,800,50);
 rect(width/2,375,800,50);
 rect(width/2,450,800,50);
 rect(width/2,525,800,50);
-text("coinflip: Flips a coin.",width/2,300)
-text("roll: Rolls a die.",width/2,375)
-text("genmaze: Generates a maze.",width/2,450)
-text("rps: \"Rock, Paper, or Scissors\" with the bot.",width/2,525)
+text("capsspam: Pretty cool, awesome command 10/10",width/2,300)
+text("clap: Pretty cool, awesome command 10/10",width/2,375)
+text("spacedout: Pretty cool, awesome command 10/10",width/2,450)
+text("vine: Pulls a random vine from the interwebs",width/2,525)
 image(home,home.width/2,home.height/2);
 }
 

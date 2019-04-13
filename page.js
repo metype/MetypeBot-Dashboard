@@ -40,6 +40,18 @@ function mousePressed() {
     if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 275 && mouseY-scroll<325) {
         link("random.html");
         }
+        if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 350 && mouseY-scroll<400) {
+            link("fun.html");
+            }
+            if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 425 && mouseY-scroll<475) {
+                link("moderation.html");
+                }
+                if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 500 && mouseY-scroll<550) {
+                    link("general.html");
+                    }
+                    if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 575 && mouseY-scroll<625) {
+                        link("roleplay.html");
+                        }
 }
 
 function windowResized(){

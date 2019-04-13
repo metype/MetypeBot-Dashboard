@@ -23,10 +23,12 @@ rect(width/2,300,800,50);
 rect(width/2,375,800,50);
 rect(width/2,450,800,50);
 rect(width/2,525,800,50);
-text("coinflip: Flips a coin.",width/2,300)
-text("roll: Rolls a die.",width/2,375)
-text("genmaze: Generates a maze.",width/2,450)
-text("rps: \"Rock, Paper, or Scissors\" with the bot.",width/2,525)
+rect(width/2,600,800,50);
+text("role: Returns all of the users who have a role.",width/2,300)
+text("roleid: Returns roleID of a specified role.",width/2,375)
+text("say: Says something.",width/2,450)
+text("user: Gives info on a user.",width/2,525)
+text("userid: Returns userID of a specified user.",width/2,600)
 image(home,home.width/2,home.height/2);
 }
 
