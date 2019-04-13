@@ -9,6 +9,7 @@ bg = loadImage("https://raw.githubusercontent.com/metype/MetypeBot-Dashboard/mas
 
 function draw() {
     scroll = (scroll>0) ? 0:scroll;
+    scroll = (scroll<-150) ? -150:scroll;
     translate(0,scroll);
     background(150);
     imageMode(CORNER);
@@ -33,6 +34,10 @@ text("General",width/2,525)
 text("Roleplay",width/2,600)
 text("Commands",width/2,675)
 text("Utility",width/2,750)
+}
+
+function mousePressed() {
+
 }
 
 function windowResized(){
