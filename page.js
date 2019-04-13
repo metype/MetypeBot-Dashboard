@@ -44,6 +44,37 @@ text("Commands",width/2,675)
 text("Utility",width/2,750)
 text("Mathematics",width/2,825)
 text("Music",width/2,900)
+cursor(ARROW);
+if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 275 && mouseY-scroll<325) {
+    cursor(HAND)
+    }
+    if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 350 && mouseY-scroll<400) {
+        cursor(HAND)
+        }
+        if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 425 && mouseY-scroll<475) {
+            cursor(HAND)
+            }
+            if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 500 && mouseY-scroll<550) {
+                cursor(HAND)
+                }
+                if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 575 && mouseY-scroll<625) {
+                    cursor(HAND)
+                    }
+                    if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 650 && mouseY-scroll<700) {
+                        cursor(HAND)
+                        }
+                        if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 725 && mouseY-scroll<775) {
+                            cursor(HAND)
+                            }
+                            if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 800 && mouseY-scroll<850) {
+                                cursor(HAND)
+                                }
+                                if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 875 && mouseY-scroll<925) {
+                                    cursor(HAND)
+                                    }
+                                if(mouseX>width-discordlogo.width&&mouseY+scroll>0&&mouseY+scroll<discordlogo.height) {
+                                    cursor(HAND)
+                                }
 }
 
 function mousePressed() {
