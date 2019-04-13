@@ -25,9 +25,9 @@ rect(width/2,300,800,50);
 rect(width/2,375,800,50);
 rect(width/2,450,800,50);
 rect(width/2,525,800,50);
-text("capsspam: Pretty cool, awesome command 10/10",width/2,300)
-text("clap: Pretty cool, awesome command 10/10",width/2,375)
-text("spacedout: Pretty cool, awesome command 10/10",width/2,450)
+text("capsspam: Takes arguments and returns them randomly cappsed.",width/2,300)
+text("clap: Adds :clap: in between all words typed in this command",width/2,375)
+text("spacedout: Adds a space between each letter typed after this",width/2,450)
 text("vine: Pulls a random vine from the interwebs",width/2,525)
 image(home,home.width/2,home.height/2);
 }
