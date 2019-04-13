@@ -38,7 +38,7 @@ text("Utility",width/2,750)
 
 function mousePressed() {
     if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 275 && mouseY-scroll<325) {
-        console.log("Random");
+        link("random.html");
         }
 }
 
@@ -49,3 +49,8 @@ function windowResized(){
   function mouseWheel(event) {
     scroll -= 0.5*event.delta;
   }
+
+  link = function(href, target) {
+    if (target !== undefined)  window.open(href, target);
+    else                   window.location = href;
+  };
