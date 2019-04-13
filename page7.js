@@ -9,6 +9,9 @@ home = loadImage("https://raw.githubusercontent.com/metype/MetypeBot-Dashboard/m
 }
 
 function draw() {
+    scroll = (scroll>0) ? 0:scroll;
+    scroll = (scroll<-100) ? -100:scroll;
+    translate(0,scroll)
     home.resize(32,32);
     background(150);
     imageMode(CORNER);
@@ -19,16 +22,20 @@ image(logo,width/2,logo.height);
 rectMode(CENTER);
 textAlign(CENTER,CENTER);
 textSize(40);
-text("Random",width/2,225)
+text("Commands",width/2,225)
 textSize(25);
 rect(width/2,300,800,50);
 rect(width/2,375,800,50);
 rect(width/2,450,800,50);
 rect(width/2,525,800,50);
-text("coinflip: Flips a coin.",width/2,300)
-text("roll: Rolls a die.",width/2,375)
-text("genmaze: Generates a maze.",width/2,450)
-text("rps: \"Rock, Paper, or Scissors\" with the bot.",width/2,525)
+rect(width/2,600,800,50);
+rect(width/2,675,800,50);
+text("groups: Lists all command groups.",width/2,300)
+text("enable: Enables a command or command group.",width/2,375)
+text("disable: Disables a command or command group.",width/2,450)
+text("reload: Reloads a command or command group.",width/2,525)
+text("load: Loads a new command.",width/2,600)
+text("unload: Unloads a command.",width/2,675)
 image(home,home.width/2,home.height/2);
 }
 
@@ -37,10 +44,14 @@ function windowResized(){
   }
 
   function mousePressed() {
-    if(mouseY<home.height&&mouseX<home.width) {
+    if(mouseY+scroll<home.height && mouseY+scroll>0&&mouseX<home.width) {
         link("index.html");
     }
 }
+
+function mouseWheel(event) {
+    scroll -= 0.5*event.delta;
+  }
 
 link = function(href, target) {
     if (target !== undefined)  window.open(href, target);

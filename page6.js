@@ -18,17 +18,17 @@ function draw() {
 image(logo,width/2,logo.height);
 rectMode(CENTER);
 textAlign(CENTER,CENTER);
+textSize(40);
+text("Roleplay",width/2,225)
 textSize(25);
 rect(width/2,300,800,50);
 rect(width/2,375,800,50);
 rect(width/2,450,800,50);
 rect(width/2,525,800,50);
-rect(width/2,600,800,50);
-text("role: Returns all of the users who have a role.",width/2,300)
-text("roleid: Returns roleID of a specified role.",width/2,375)
-text("say: Says something.",width/2,450)
-text("user: Gives info on a user.",width/2,525)
-text("userid: Returns userID of a specified user.",width/2,600)
+text("kiss: Kisses a user.",width/2,300)
+text("poke: Pokes a user.",width/2,375)
+text("punch: Punches a user.",width/2,450)
+text("slap: Slaps a user.",width/2,525)
 image(home,home.width/2,home.height/2);
 }
 

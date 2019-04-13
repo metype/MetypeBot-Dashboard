@@ -18,6 +18,8 @@ function draw() {
 image(logo,width/2,logo.height);
 rectMode(CENTER);
 textAlign(CENTER,CENTER);
+textSize(40);
+text("Moderation",width/2,225)
 textSize(25);
 rect(width/2,300,800,50);
 rect(width/2,375,800,50);

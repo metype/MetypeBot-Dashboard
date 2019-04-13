@@ -19,16 +19,18 @@ image(logo,width/2,logo.height);
 rectMode(CENTER);
 textAlign(CENTER,CENTER);
 textSize(40);
-text("Random",width/2,225)
+text("Mathematics",width/2,225)
 textSize(25);
 rect(width/2,300,800,50);
 rect(width/2,375,800,50);
 rect(width/2,450,800,50);
 rect(width/2,525,800,50);
-text("coinflip: Flips a coin.",width/2,300)
-text("roll: Rolls a die.",width/2,375)
-text("genmaze: Generates a maze.",width/2,450)
-text("rps: \"Rock, Paper, or Scissors\" with the bot.",width/2,525)
+rect(width/2,600,800,50);
+text("pow: Gives a number to a specified power.",width/2,300)
+text("random: Gives a random number. Syntax '/random <min> <max>'",width/2,375)
+text("realtime: Tells you the current time... in seconds since Jan 1st 1970",width/2,450)
+text("sqr: Gives the square of a number.",width/2,525)
+text("sqrt: Gives the square root of a number.",width/2,600)
 image(home,home.width/2,home.height/2);
 }
 
@@ -37,11 +39,10 @@ function windowResized(){
   }
 
   function mousePressed() {
-    if(mouseY<home.height&&mouseX<home.width) {
+    if(mouseY+scroll<home.height && mouseY+scroll>0&&mouseX<home.width) {
         link("index.html");
     }
 }
-
 link = function(href, target) {
     if (target !== undefined)  window.open(href, target);
     else                   window.location = href;

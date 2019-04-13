@@ -9,7 +9,7 @@ bg = loadImage("https://raw.githubusercontent.com/metype/MetypeBot-Dashboard/mas
 
 function draw() {
     scroll = (scroll>0) ? 0:scroll;
-    scroll = (scroll<-150) ? -150:scroll;
+    scroll = (scroll<-200) ? -200:scroll;
     translate(0,scroll);
     background(150);
     imageMode(CORNER);
@@ -19,6 +19,8 @@ function draw() {
 image(logo,width/2,logo.height);
 rectMode(CENTER);
 textAlign(CENTER,CENTER);
+textSize(40);
+text("Home",width/2,225)
 textSize(25);
 rect(width/2,300,800,50);
 rect(width/2,375,800,50);
@@ -27,6 +29,7 @@ rect(width/2,525,800,50);
 rect(width/2,600,800,50);
 rect(width/2,675,800,50);
 rect(width/2,750,800,50);
+rect(width/2,825,800,50);
 text("Random",width/2,300)
 text("Fun",width/2,375)
 text("Moderation",width/2,450)
@@ -34,6 +37,7 @@ text("General",width/2,525)
 text("Roleplay",width/2,600)
 text("Commands",width/2,675)
 text("Utility",width/2,750)
+text("Mathematics",width/2,825)
 }
 
 function mousePressed() {
@@ -52,6 +56,15 @@ function mousePressed() {
                     if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 575 && mouseY-scroll<625) {
                         link("roleplay.html");
                         }
+                        if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 650 && mouseY-scroll<700) {
+                            link("commands.html");
+                            }
+                            if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 725 && mouseY-scroll<775) {
+                                link("utility.html");
+                                }
+                                if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 800 && mouseY-scroll<850) {
+                                    link("mathematics.html");
+                                    }
 }
 
 function windowResized(){
