@@ -5,12 +5,13 @@ function setup() {
     cnv.style('display', 'block');
 logo=loadImage("https://raw.githubusercontent.com/metype/MetypeBot-Dashboard/master/MetypeBot-Logo.png");
 bg = loadImage("https://raw.githubusercontent.com/metype/MetypeBot-Dashboard/master/bgcolor.png");
-home = loadImage();
+home = loadImage("https://raw.githubusercontent.com/metype/MetypeBot-Dashboard/master/home.png");
 }
 
 function draw() {
     background(150);
     imageMode(CORNER);
+    image(home,0,0);
     bg.resize(width,logo.height*2);
     image(bg,0,0);
     imageMode(CENTER);
@@ -31,3 +32,14 @@ text("rps: \"Rock, Paper, or Scissors\" with the bot.",width/2,525)
 function windowResized(){
     resizeCanvas(windowWidth, windowHeight);
   }
+
+  function mousePressed() {
+    if(mouseY<home.height&&mouseX<home.width) {
+        link("index.html");
+    }
+}
+
+link = function(href, target) {
+    if (target !== undefined)  window.open(href, target);
+    else                   window.location = href;
+  };
