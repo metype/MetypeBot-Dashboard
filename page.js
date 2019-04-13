@@ -12,7 +12,7 @@ discordlogo=loadImage("https://discordapp.com/assets/fc0b01fe10a0b8c602fb0106d81
 function draw() {
     discordlogo.resize(160,54.4);
     scroll = (scroll>0) ? 0:scroll;
-    scroll = (scroll<-300) ? -300:scroll;
+    scroll = (scroll<-200) ? -200:scroll;
     translate(0,scroll);
     background(150);
     imageMode(CORNER);
