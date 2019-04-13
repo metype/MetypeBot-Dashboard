@@ -26,15 +26,35 @@ textAlign(CENTER,CENTER);
 textSize(40);
 text("Home",width/2,225)
 textSize(25);
+if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 275 && mouseY-scroll<325) {
+    fill(100); } else { fill(255); }
 rect(width/2,300,800,50,20);
+if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 350 && mouseY-scroll<400) {
+   fill(100); } else { fill(255); }
 rect(width/2,375,800,50,20);
+if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 425 && mouseY-scroll<475) {
+   fill(100); } else { fill(255); }
 rect(width/2,450,800,50,20);
+if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 500 && mouseY-scroll<550) {
+   fill(100); } else { fill(255); }
 rect(width/2,525,800,50,20);
+if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 575 && mouseY-scroll<625) {
+   fill(100); } else { fill(255); }
 rect(width/2,600,800,50,20);
+if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 650 && mouseY-scroll<700) {
+                   
+   fill(100); } else { fill(255); }
 rect(width/2,675,800,50,20);
+if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 725 && mouseY-scroll<775) {
+   fill(100); } else { fill(255); }
 rect(width/2,750,800,50,20);
+if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 800 && mouseY-scroll<850) {
+   fill(100); } else { fill(255); }
 rect(width/2,825,800,50,20);
+if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 875 && mouseY-scroll<925) {
+   fill(100); } else { fill(255); }
 rect(width/2,900,800,50,20);
+fill(0);
 text("Random",width/2,300)
 text("Fun",width/2,375)
 text("Moderation",width/2,450)
