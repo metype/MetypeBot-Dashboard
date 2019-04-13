@@ -30,6 +30,10 @@ text("roll: Rolls a die.",width/2,375)
 text("genmaze: Generates a maze.",width/2,450)
 text("rps: \"Rock, Paper, or Scissors\" with the bot.",width/2,525)
 image(home,home.width/2,home.height/2);
+cursor(ARROW);
+if(mouseY+scroll<home.height&&mouseX<home.width) {
+  cursor(HAND);
+}
 }
 
 function windowResized(){

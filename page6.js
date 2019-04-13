@@ -32,6 +32,10 @@ text("punch: Punches a user.",width/2,450)
 text("slap: Slaps a user.",width/2,525)
     text("hug: Hugs a user.",width/2,600)
 image(home,home.width/2,home.height/2);
+cursor(ARROW);
+if(mouseY+scroll<home.height&&mouseX<home.width) {
+  cursor(HAND);
+}
 }
 
 function windowResized(){

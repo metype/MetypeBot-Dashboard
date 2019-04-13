@@ -30,6 +30,10 @@ text("clap: Adds :clap: in between all words typed in this command",width/2,375)
 text("spacedout: Adds a space between each letter typed after this",width/2,450)
 text("vine: Pulls a random vine from the interwebs",width/2,525)
 image(home,home.width/2,home.height/2);
+cursor(ARROW);
+if(mouseY+scroll<home.height&&mouseX<home.width) {
+  cursor(HAND);
+}
 }
 
 function windowResized(){

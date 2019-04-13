@@ -37,6 +37,10 @@ text("reload: Reloads a command or command group.",width/2,525)
 text("load: Loads a new command.",width/2,600)
 text("unload: Unloads a command.",width/2,675)
 image(home,home.width/2,home.height/2);
+cursor(ARROW);
+if(mouseY+scroll<home.height && mouseY+scroll>0&&mouseX<home.width) {
+  cursor(HAND);
+}
 }
 
 function windowResized(){
@@ -49,9 +53,6 @@ function windowResized(){
     }
 }
 
-function mouseWheel(event) {
-    scroll -= 0.5*event.delta;
-  }
 
 link = function(href, target) {
     if (target !== undefined)  window.open(href, target);

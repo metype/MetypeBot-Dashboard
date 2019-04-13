@@ -30,6 +30,10 @@ text("kick: Kicks a member.",width/2,375)
 text("purge: Deletes a specified number of messages.",width/2,450)
 text("warn: Warns a member.",width/2,525)
 image(home,home.width/2,home.height/2);
+cursor(ARROW);
+if(mouseY+scroll<home.height&&mouseX<home.width) {
+  cursor(HAND);
+}
 }
 
 function windowResized(){

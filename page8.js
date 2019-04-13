@@ -33,6 +33,10 @@ text("prefix: Shows or sets the command prefix.",width/2,375)
 text("ping: Checks the bot's ping to the Discord server.",width/2,450)
 text("eval: Executes JavaScript code.",width/2,525)
 image(home,home.width/2,home.height/2);
+cursor(ARROW);
+if(mouseY+scroll<home.height && mouseY+scroll>0&&mouseX<home.width) {
+  cursor(HAND);
+}
 }
 
 function windowResized(){

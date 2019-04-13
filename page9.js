@@ -32,6 +32,10 @@ text("realtime: Tells you the current time... in seconds since Jan 1st 1970",wid
 text("sqr: Gives the square of a number.",width/2,525)
 text("sqrt: Gives the square root of a number.",width/2,600)
 image(home,home.width/2,home.height/2);
+cursor(ARROW);
+if(mouseY+scroll<home.height && mouseY+scroll>0&&mouseX<home.width) {
+  cursor(HAND);
+}
 }
 
 function windowResized(){

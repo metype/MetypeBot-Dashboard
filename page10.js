@@ -51,6 +51,10 @@ text("loop: Sets the loop state for the queue.",width/2,1050)
 text("clear: Clears the entire queue.",width/2,1125)
 text("np: Shows the now playing text.",width/2,1200)
 image(home,home.width/2,home.height/2);
+cursor(ARROW);
+if(mouseY+scroll<home.height && mouseY+scroll>0&&mouseX<home.width) {
+  cursor(HAND);
+}
 }
 
 function windowResized(){
