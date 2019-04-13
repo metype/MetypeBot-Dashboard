@@ -37,7 +37,9 @@ text("Utility",width/2,750)
 }
 
 function mousePressed() {
-
+    if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 275 && mouseY-scroll<325) {
+        console.log("Random");
+        }
 }
 
 function windowResized(){
