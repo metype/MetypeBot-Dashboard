@@ -11,7 +11,7 @@ discordlogo=loadImage("https://discordapp.com/assets/fc0b01fe10a0b8c602fb0106d81
 function draw() {
     discordlogo.resize(160,54.4);
     scroll = (scroll>0) ? 0:scroll;
-    scroll = (scroll<-200) ? -200:scroll;
+    scroll = (scroll<-300) ? -300:scroll;
     translate(0,scroll);
     background(150);
     imageMode(CORNER);
@@ -33,6 +33,7 @@ rect(width/2,600,800,50);
 rect(width/2,675,800,50);
 rect(width/2,750,800,50);
 rect(width/2,825,800,50);
+rect(width/2,900,800,50);
 text("Random",width/2,300)
 text("Fun",width/2,375)
 text("Moderation",width/2,450)
@@ -41,6 +42,7 @@ text("Roleplay",width/2,600)
 text("Commands",width/2,675)
 text("Utility",width/2,750)
 text("Mathematics",width/2,825)
+text("Music",width/2,900)
 }
 
 function mousePressed() {
@@ -68,6 +70,9 @@ function mousePressed() {
                                 if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 800 && mouseY-scroll<850) {
                                     link("mathematics.html");
                                     }
+                                    if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 875 && mouseY-scroll<925) {
+                                        link("music.html");
+                                        }
                                     if(mouseX>width-discordlogo.width&&mouseY+scroll>0&&mouseY+scroll<discordlogo.height) {
                                         link("https://discordapp.com/api/oauth2/authorize?client_id=363489065590325261&permissions=418768903&scope=bot")
                                     }
