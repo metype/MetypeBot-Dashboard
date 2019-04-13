@@ -126,7 +126,8 @@ function mousePressed() {
                                         link("music.html");
                                         }
                                     if(mouseX>width-discordlogo.width&&mouseY+scroll>0&&mouseY+scroll<discordlogo.height) {
-                                        link("https://discordapp.com/api/oauth2/authorize?client_id=363489065590325261&permissions=418768903&scope=bot")
+                                        // greet();
+                                        link("https://discordapp.com/api/oauth2/authorize?client_id=363489065590325261&permissions=418768903&scope=bot","_blank")
                                     }
 }
 
@@ -138,7 +139,6 @@ function windowResized(){
     scroll -= 0.5*event.delta;
   }
 
-  link = function(href, target) {
-    if (target !== undefined)  window.open(href, target);
-    else                   window.location = href;
-  };
+  function link(url, winName, options) {
+    winName && open(url, winName, options) || (location = url);
+  }
