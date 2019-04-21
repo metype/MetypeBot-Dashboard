@@ -10,11 +10,10 @@ discordlogo=loadImage("https://discordapp.com/assets/fc0b01fe10a0b8c602fb0106d81
 }
 
 function draw() {
+    background(150);
     discordlogo.resize(160,54.4);
     scroll = (scroll>0) ? 0:scroll;
-    scroll = (scroll<-200) ? -200:scroll;
     translate(0,scroll);
-    background(150);
     imageMode(CORNER);
     bg.resize(width,logo.height*2);
     image(bg,0,0);
@@ -92,9 +91,10 @@ if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 275 && mous
                                 if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 875 && mouseY-scroll<925) {
                                     cursor(HAND)
                                     }
-                                if(mouseX>width-discordlogo.width&&mouseY+scroll>0&&mouseY+scroll<discordlogo.height) {
+                                if(mouseX>width-discordlogo.width&&mouseY-scroll>0&&mouseY-scroll<discordlogo.height) {
                                     cursor(HAND)
                                 }
+                                // rect(width-discordlogo.width,0+scroll,discordlogo.width,scroll+discordlogo.height)
 }
 
 function mousePressed() {
@@ -125,7 +125,7 @@ function mousePressed() {
                                     if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 875 && mouseY-scroll<925) {
                                         link("music.html");
                                         }
-                                    if(mouseX>width-discordlogo.width&&mouseY+scroll>0&&mouseY+scroll<discordlogo.height) {
+                                    if(mouseX>width-discordlogo.width&&mouseY-scroll>0&&mouseY-scroll<discordlogo.height) {
                                         // greet();
                                         link("https://discordapp.com/api/oauth2/authorize?client_id=363489065590325261&permissions=418768903&scope=bot","_blank")
                                     }

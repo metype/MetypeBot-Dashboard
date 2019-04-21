@@ -10,7 +10,6 @@ home = loadImage("https://raw.githubusercontent.com/metype/MetypeBot-Dashboard/m
 
 function draw() {
     scroll = (scroll>0) ? 0:scroll;
-    scroll = (scroll<-500) ? -500:scroll;
     translate(0,scroll)
     home.resize(32,32);
     background(150);
