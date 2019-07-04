@@ -4,7 +4,7 @@ let logo,bg,hight,scroll=0,discordlogo,loc;
 function setup() {
     var cnv = createCanvas(windowWidth, windowHeight);
     cnv.style('display', 'block');
-    loc=window.location();
+    loc=window.location;
     loc = loc.split("?code");
     console.log(loc);
 logo=loadImage("https://raw.githubusercontent.com/metype/MetypeBot-Dashboard/master/MetypeBot-Logo.png");
