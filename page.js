@@ -5,7 +5,7 @@ function setup() {
     var cnv = createCanvas(windowWidth, windowHeight);
     cnv.style('display', 'block');
     loc=window.location;
-    loc = loc.split("?code");
+    loc = loc.split("?code")[1];
     console.log(loc);
 logo=loadImage("https://raw.githubusercontent.com/metype/MetypeBot-Dashboard/master/MetypeBot-Logo.png");
 bg = loadImage("https://raw.githubusercontent.com/metype/MetypeBot-Dashboard/master/bgcolor.png");
