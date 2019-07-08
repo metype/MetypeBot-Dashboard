@@ -56,7 +56,7 @@ rect(width/2,825,800,50,20);
 if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 875 && mouseY-scroll<925) {
    fill(100); } else { fill(255); }
 rect(width/2,900,800,50,20);
-    if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 875 && mouseY-scroll<925) {
+    if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 950 && mouseY-scroll<1000) {
    fill(100); } else { fill(255); }
 rect(width/2,975,800,50,20);
 fill(0);
