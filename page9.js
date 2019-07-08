@@ -23,7 +23,7 @@ text("Mathematics",width/2,225)
 textSize(25);
 rect(width/2,300,800,50,20);
 rect(width/2,375,800,50,20);
-rect(width/2,450,800,50,20);
+rect(width/2,450,840,10,20);
 rect(width/2,525,800,50,20);
 rect(width/2,600,800,50,20);
 text("pow: Gives a number to a specified power.",width/2,300)
