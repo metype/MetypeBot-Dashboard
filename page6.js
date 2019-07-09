@@ -26,11 +26,13 @@ rect(width/2,375,800,50,20);
 rect(width/2,450,800,50,20);
 rect(width/2,525,800,50,20);
     rect(width/2,600,800,50,20);
+    rect(width/2,675,800,50,20);
 text("kiss: Kisses a user.",width/2,300)
 text("poke: Pokes a user.",width/2,375)
 text("punch: Punches a user.",width/2,450)
 text("slap: Slaps a user.",width/2,525)
-    text("hug: Hugs a user.",width/2,600)
+    text("hug: Slaps a user.",width/2,600)
+    text("boop: Slaps a user.",width/2,675)
 image(home,home.width/2,home.height/2);
 cursor(ARROW);
 if(mouseY+scroll<home.height&&mouseX<home.width) {
