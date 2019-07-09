@@ -22,8 +22,8 @@ textSize(40);
 text("Leveling",width/2,225)
 textSize(25);
 rect(width/2,300,800,50,20);
-rect(width/2,375,800,50,20);
-rect(width/2,450,800,50,20);
+rect(width/2,375,950,50,20);
+rect(width/2,450,950,50,20);
 text("level: Gives your level and XP amount",width/2,300)
 text("levelrole: Admin Only - Adds a role for a specific level Syntax : '/levelrole <role id> <level>'",width/2,375)
 text("levelrole: Admin Only - Removed all roles for a specific level Syntax : '/levelremove <level>''",width/2,450)
