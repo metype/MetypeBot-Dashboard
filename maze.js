@@ -49,10 +49,10 @@ function showMaze(m) {
         case(9):
         
         break;
-        case(a):
+        case('a'):
         
         break;
-        case(b):
+        case('b'):
         
         break;
    }
