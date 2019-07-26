@@ -19,8 +19,8 @@ background(51);
 
 
 function showMaze(m) {
-  for(int i=0;i<wdth;i++){
-   for(int j=0;j<hight;j++){
+  for(let i=0;i<wdth;i++){
+   for(let j=0;j<hight;j++){
     switch(m[i*j+wdth]==0){
       case(1):
         
