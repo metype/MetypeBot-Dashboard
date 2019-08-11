@@ -1,9 +1,12 @@
 
-let logo,bg,hight,scroll=0,discordlogo;
+let logo,bg,hight,scroll=0,discordlogo,loc;
 
 function setup() {
     var cnv = createCanvas(windowWidth, windowHeight);
     cnv.style('display', 'block');
+    let loc=window.location;
+    loc = (loc+"").split("?code")[1];
+    console.log(loc);
 logo=loadImage("https://raw.githubusercontent.com/metype/MetypeBot-Dashboard/master/MetypeBot-Logo.png");
 bg = loadImage("https://raw.githubusercontent.com/metype/MetypeBot-Dashboard/master/bgcolor.png");
 discordlogo=loadImage("https://discordapp.com/assets/fc0b01fe10a0b8c602fb0106d8189d9b.png");
@@ -53,6 +56,9 @@ rect(width/2,825,800,50,20);
 if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 875 && mouseY-scroll<925) {
    fill(100); } else { fill(255); }
 rect(width/2,900,800,50,20);
+    if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 950 && mouseY-scroll<1000) {
+   fill(100); } else { fill(255); }
+rect(width/2,975,800,50,20);
 fill(0);
 text("Random",width/2,300)
 text("Fun",width/2,375)
@@ -63,6 +69,7 @@ text("Commands",width/2,675)
 text("Utility",width/2,750)
 text("Mathematics",width/2,825)
 text("Music",width/2,900)
+    text("Leveling",width/2,975)
 cursor(ARROW);
 if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 275 && mouseY-scroll<325) {
     cursor(HAND)
@@ -89,6 +96,9 @@ if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 275 && mous
                                 cursor(HAND)
                                 }
                                 if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 875 && mouseY-scroll<925) {
+                                    cursor(HAND)
+                                    }
+    if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 950 && mouseY-scroll<1000) {
                                     cursor(HAND)
                                     }
                                 if(mouseX>width-discordlogo.width&&mouseY-scroll>0&&mouseY-scroll<discordlogo.height) {
@@ -125,6 +135,9 @@ function mousePressed() {
                                     if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 875 && mouseY-scroll<925) {
                                         link("music.html");
                                         }
+        if(mouseX>(width/2)-400 && mouseX < (width/2)+400 && mouseY-scroll > 950 && mouseY-scroll<1000) {
+            link("leveling.html");
+        }
                                     if(mouseX>width-discordlogo.width&&mouseY-scroll>0&&mouseY-scroll<discordlogo.height) {
                                         // greet();
                                         link("https://discordapp.com/api/oauth2/authorize?client_id=363489065590325261&permissions=418768903&scope=bot","_blank")

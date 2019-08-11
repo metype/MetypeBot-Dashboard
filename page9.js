@@ -23,12 +23,14 @@ text("Mathematics",width/2,225)
 textSize(25);
 rect(width/2,300,800,50,20);
 rect(width/2,375,800,50,20);
-rect(width/2,450,800,50,20);
+rect(width/2,450,900,50,20);
 rect(width/2,525,800,50,20);
 rect(width/2,600,800,50,20);
+    rect(width/2,675,800,50,20);
 text("pow: Gives a number to a specified power.",width/2,300)
+    text("pi: Returns the value of PI.",width/2,675)
 text("random: Gives a random number. Syntax '/random <min> <max>'",width/2,375)
-text("realtime: Tells you the current time... in seconds since Jan 1st 1970",width/2,450)
+text("realtime: Tells you the current time; Syntax : '/realtime <hour difference from GMT>'",width/2,450)
 text("sqr: Gives the square of a number.",width/2,525)
 text("sqrt: Gives the square root of a number.",width/2,600)
 image(home,home.width/2,home.height/2);
